@@ -1,29 +1,3 @@
-<?
-
-  if(isset($_POST['submit'])){
-    //print_r($_POST['email']);
-    //print_r($_POST['senha']);
-    //print_r($_POST['nome']);
-    //print_r($_POST['genero']);
-    //print_r($_POST['endereco']);
-    //print_r($_POST['telefone']);
-
-    include_once('config.php');
-
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-    $nome = $_POST['nome'];
-    $genero = $_POST['genero'];
-    $dataNasc = $_POST['dataNasc'];
-    $endereco = $_POST['endereco'];
-    $telefone = $_POST['telefone'];
-
-    $result = mysqli_query($conexao, "INSERT INTO pacientes(email, senha, nome, genero, dataNasc, endereco, telefone) 
-    VALUES ($email, $senha, $nome, $genero, $dataNasc, $endereco, $telefone)");
-
-  }
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -34,22 +8,22 @@
     <title>Cadastro | Odonto</title>
   </head>
   <body>
-   <form action="cadastro.php" method="POST">
+   <form action="vCadastro.php" method="post">
     <div class="container">
         <div class="card">
             <h1>Cadastro</h1>
             <div class="label-float">
-                <input name="email" type="text" id="email"  required>
+                <input name="email" type="text" required>
                 <label for="email">E-mail</label>
             </div>
 
             <div class="label-float">
-              <input name="senha" type="password" id="senha"  required>
+              <input name="senha" type="password" required>
               <label for="senha">Senha</label>
             </div>
 
             <div class="label-float">
-              <input name="nome" type="text" id="nome"  required>
+              <input name="nome" type="text" id="nome" required>
               <label for="nome">Nome</label>
             </div>
 
@@ -94,11 +68,11 @@
               </div>
 
               <p>Já tem uma conta? Faça o
-                <a href="login.html">login</a>
+                <a href="login.php">login</a>
               </p>
         </div>
     </div>
-    </form>
+  </form>
 
    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
