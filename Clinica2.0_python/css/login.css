@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+body{
+    background-image: url(../img/consultório.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #ffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d624c;
+    font-weight: 900;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #0d624c;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #5fa33d;
+}
+
+.label-float label{
+    color: #0d624c;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    font-weight: 300;
+}
+
+.label-float input:focus + label, 
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #5fa33d;
+}
+
+button{
+    width: 50%;
+    background-color: transparent;
+    border-color: #0d624c;
+    color: #0d624c;
+    padding: 7px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease-out;
+}
+
+button:hover{
+    background-color: #5fa33d;
+    color: #ffffff;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    color: #0d624c;
+}
+
+p{
+    color: #0d624c;
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+a{
+    color: #5fa33d;
+    font-weight: 500;
+    transition: all .2s ease-out;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #0d624c;
+}
+
+.voltar{
+    text-align: center;
+    padding-left: 115px;
+}
