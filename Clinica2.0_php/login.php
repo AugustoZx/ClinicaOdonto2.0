@@ -9,35 +9,40 @@
     <title>Login | Odonto</title>
   </head>
   <body>
-    <div class="container">
-        <div class="card">
-            <h1>Login</h1>
-            <div class="label-float">
-                <input type="text" id="email" placeholder="" required>
-                <label for="email">E-mail</label>
-            </div>
-
-            <section>
+    <form action="vLogin.php" method="POST">
+      <div class="container">
+          <div class="card">
+              <h1>Login</h1>
               <div class="label-float">
-                <input type="password" id="senha" placeholder="" required>
-                <label for="senha">Senha</label>
-              </div>
-            </section>
-
-              <div class="justify-center">
-                <button>Entrar</button>
+                  <input type="text" name="login" required>
+                  <label for="login">CPF ou CRO</label>
               </div>
 
+              <section>
+                <div class="label-float">
+                  <input type="password" name="senha" required>
+                  <label for="senha">Senha</label>
+                </div>
+             </section>
 
-              <div class="justify-center">
-                <hr>
-              </div>
+                <div class="justify-center">
+                    <input class="inputSubmit" type="submit" name="submit" value="Entrar">
+                </div>
 
-              <p>Não tem uma conta?
-                <a href="cadastro.php">Cadastre-se</a>
-              </p>
-        </div>
-    </div>
+
+                <div class="justify-center">
+                  <hr>
+                </div>
+
+                <p>Não tem uma conta?
+                  <a href="cadastro.php">Cadastre-se</a>
+                </p>
+                <p>
+                  <a href="home.html" class="voltar">Voltar</a>
+                </p>
+          </div>
+      </div>
+    </form>
 
     <script src="js/login.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

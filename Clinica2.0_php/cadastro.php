@@ -13,8 +13,13 @@
         <div class="card">
             <h1>Cadastro</h1>
             <div class="label-float">
-                <input name="email" type="text" required>
-                <label for="email">E-mail</label>
+                <input name="nome" type="text" required>
+                <label for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+              <input name="email" type="email" required>
+              <label for="email">E-mail</label>
             </div>
 
             <div class="label-float">
@@ -23,8 +28,8 @@
             </div>
 
             <div class="label-float">
-              <input name="nome" type="text" id="nome" required>
-              <label for="nome">Nome</label>
+              <input name="cpf" type="text" required>
+              <label for="cpf">CPF</label>
             </div>
 
               <h3 class="label-float">Gênero:</h3>
@@ -67,8 +72,11 @@
                 <hr>
               </div>
 
-              <p>Já tem uma conta? Faça o
+              <p class="aviso">Já tem uma conta? Faça o
                 <a href="login.php">login</a>
+              </p>
+              <p>
+                <a href="home.html" class="voltar">Voltar</a>
               </p>
         </div>
     </div>

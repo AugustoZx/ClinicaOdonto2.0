@@ -1,7 +1,7 @@
 <?php
   session_start();
   include_once('config.php');
-  if((!isset($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
+  if((!isset($_SESSION['loginp']) == true) and (!isset ($_SESSION['senhap']) == true))
   {
     unset($_SESSION['login']);
     unset($_SESSION['senha']);
@@ -28,7 +28,7 @@
         $dados = mysqli_query($conexao, "SELECT nome_pac FROM pacientes WHERE cpf = '$cpf'");
         while($nome = mysqli_fetch_assoc($dados))
         {
-          echo "<h3>Olá, " . $nome['nome_pac'] . "</h3>";
+          echo "<p>Olá, " . $nome['nome_pac'] . "</p>";
         }
         ?>
       </div>
